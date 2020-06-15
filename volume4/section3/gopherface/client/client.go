@@ -3,9 +3,9 @@ package main
 import (
 	"strings"
 
-	"github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface/client/handlers"
+	"github.com/richardzhang0301/gofullstack/volume4/section3/gopherface/client/handlers"
 
-	"github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface/client/common"
+	"github.com/richardzhang0301/gofullstack/volume4/section3/gopherface/client/common"
 
 	"github.com/richardzhang0301/isokit"
 	"honnef.co/go/js/dom"

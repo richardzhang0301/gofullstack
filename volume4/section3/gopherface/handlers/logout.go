@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface/common/authenticate"
+	"github.com/richardzhang0301/gofullstack/volume4/section3/gopherface/common/authenticate"
 )
 
 func LogoutHandler(w http.ResponseWriter, r *http.Request) {

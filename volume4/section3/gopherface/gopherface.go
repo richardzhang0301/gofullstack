@@ -4,11 +4,11 @@ import (
 	"log"
 	"os"
 
-	"github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface/common"
-	"github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface/common/datastore"
-	"github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface/endpoints"
-	"github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface/handlers"
-	"github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface/middleware"
+	"github.com/richardzhang0301/gofullstack/volume4/section3/gopherface/common"
+	"github.com/richardzhang0301/gofullstack/volume4/section3/gopherface/common/datastore"
+	"github.com/richardzhang0301/gofullstack/volume4/section3/gopherface/endpoints"
+	"github.com/richardzhang0301/gofullstack/volume4/section3/gopherface/handlers"
+	"github.com/richardzhang0301/gofullstack/volume4/section3/gopherface/middleware"
 	"github.com/richardzhang0301/isokit"
 
 	"net/http"

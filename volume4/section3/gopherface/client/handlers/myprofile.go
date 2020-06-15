@@ -8,9 +8,9 @@ import (
 	"honnef.co/go/js/dom"
 	"honnef.co/go/js/xhr"
 
-	"github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface/client/common"
-	"github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface/forms"
-	"github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface/models"
+	"github.com/richardzhang0301/gofullstack/volume4/section3/gopherface/client/common"
+	"github.com/richardzhang0301/gofullstack/volume4/section3/gopherface/forms"
+	"github.com/richardzhang0301/gofullstack/volume4/section3/gopherface/models"
 	"github.com/gopherjs/gopherjs/js"
 
 	"github.com/richardzhang0301/isokit"
