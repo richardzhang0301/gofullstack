@@ -1,4 +1,4 @@
-FROM golang
+FROM golang:1.12.16
 MAINTAINER Kamesh Balasubramanian kamesh@kamesh.com
 
 # Declare required environment variables
@@ -13,7 +13,7 @@ RUN go get -u honnef.co/go/js/dom
 RUN go get -u -d -tags=js github.com/gopherjs/jsbuiltin
 RUN go get -u honnef.co/go/js/xhr
 RUN go get -u github.com/gopherjs/websocket
-RUN go get -u github.com/richardzhang0301/isokit 
+RUN go get -u github.com/richardzhang0301/isokit
 RUN go get -u github.com/EngineerKamesh/gofullstack
 
 # Transpile and install the client-side application code
@@ -27,4 +27,3 @@ ENTRYPOINT /go/bin/gopherface
 
 # Expose port 8080 of the container
 EXPOSE 8080
-
