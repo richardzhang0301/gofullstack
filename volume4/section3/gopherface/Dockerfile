@@ -2,7 +2,7 @@ FROM golang:1.12.16
 MAINTAINER Kamesh Balasubramanian kamesh@kamesh.com
 
 # Declare required environment variables
-ENV GOPHERFACE_APP_ROOT=/go/src/github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface
+ENV GOPHERFACE_APP_ROOT=/go/src/github.com/richardzhang0301/gofullstack/volume4/section3/gopherface
 ENV GOPHERFACE_HASH_KEY="CRKVBJs0kfyeQ9Y1"
 ENV GOPHERFACE_BLOCK_KEY="9LtmRLzVH27CwxrO"
 ENV GOPATH=/go
@@ -14,7 +14,7 @@ RUN go get -u -d -tags=js github.com/gopherjs/jsbuiltin
 RUN go get -u honnef.co/go/js/xhr
 RUN go get -u github.com/gopherjs/websocket
 RUN go get -u github.com/richardzhang0301/isokit
-RUN go get -u github.com/EngineerKamesh/gofullstack
+RUN go get -u github.com/richardzhang0301/gofullstack
 
 RUN ln -s /go/src/github.com/tdewolff/parse /go/src/github.com/tdewolff/parse/v2
 
@@ -22,7 +22,7 @@ RUN ln -s /go/src/github.com/tdewolff/parse /go/src/github.com/tdewolff/parse/v2
 RUN cd $GOPHERFACE_APP_ROOT/client; go get ./..; /go/bin/gopherjs build -m --verbose -o $GOPHERFACE_APP_ROOT/static/js/client.min.js
 
 # Build and install the server-side application code
-RUN go install github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface
+RUN go install github.com/richardzhang0301/gofullstack/volume4/section3/gopherface
 
 # Specify the entrypoint
 ENTRYPOINT /go/bin/gopherface
