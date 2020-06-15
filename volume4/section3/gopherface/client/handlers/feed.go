@@ -16,7 +16,7 @@ import (
 	"github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface/forms"
 	"github.com/gopherjs/gopherjs/js"
 
-	"go.isomorphicgo.org/go/isokit"
+	"github.com/richardzhang0301/isokit"
 )
 
 var postForm *forms.SocialMediaPostForm

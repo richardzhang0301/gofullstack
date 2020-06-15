@@ -7,7 +7,7 @@ import (
 
 	"github.com/EngineerKamesh/gofullstack/volume4/section3/gopherface/client/common"
 
-	"go.isomorphicgo.org/go/isokit"
+	"github.com/richardzhang0301/isokit"
 	"honnef.co/go/js/dom"
 )
 
