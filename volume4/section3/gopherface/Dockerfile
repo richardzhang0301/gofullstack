@@ -16,6 +16,8 @@ RUN go get -u github.com/gopherjs/websocket
 RUN go get -u github.com/richardzhang0301/isokit
 RUN go get -u github.com/EngineerKamesh/gofullstack
 
+RUN ln -s /go/src/github.com/tdewolff/parse /go/src/github.com/tdewolff/parse/v2
+
 # Transpile and install the client-side application code
 RUN cd $GOPHERFACE_APP_ROOT/client; go get ./..; /go/bin/gopherjs build -m --verbose -o $GOPHERFACE_APP_ROOT/static/js/client.min.js
 
